@@ -38,7 +38,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding: 0 5em;
-  height: 8em;
+  height: 15vh;
   justify-content: space-between;
 }
 
@@ -106,4 +106,28 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   padding: 15px 30px;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  height: 15vh;
+  padding: 0 5em;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.quick-links__github-container, .quick-links__linkedin-container, .quick-links__gmail-container {
+  cursor: pointer;
+}
+.quick-links__img {
+  width: 30px;
+  position: relative;
+  transition: all 250ms ease 50ms;
+}
+.quick-links__img--github:hover, .quick-links__img--linkedin:hover, .quick-links__img--gmail:hover {
+  transform: translateY(-10px);
 }/*# sourceMappingURL=style.css.map */

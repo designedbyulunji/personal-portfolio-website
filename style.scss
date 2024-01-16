@@ -22,7 +22,6 @@ html {
 }
 
 body {
-  // background-color: aliceblue;
   width: 100%;
   min-height: 100vh;
 }
@@ -41,7 +40,7 @@ body {
     @include flex_display;
     // background-color: aqua;
     padding: 0 5em;
-    height: 8em;
+    height: 15vh;
     justify-content: space-between;
   }
 }
@@ -117,5 +116,32 @@ body {
         padding: 15px 30px;
       }
     }
+  }
+}
+
+.quick-links {
+  @include flex_display;
+  justify-content: flex-start;
+  width: 100%;
+  height: 15vh;
+  padding: 0 5em;
+  column-gap: 40px;
+
+  &__github-container,
+  &__linkedin-container,
+  &__gmail-container {
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 30px;
+    position: relative;
+    transition: all 250ms ease 50ms;
+  }
+
+  &__img--github:hover,
+  &__img--linkedin:hover,
+  &__img--gmail:hover {
+    transform: translateY(-10px);
   }
 }
