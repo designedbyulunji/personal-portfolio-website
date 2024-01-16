@@ -129,5 +129,5 @@ body {
   transition: all 250ms ease 50ms;
 }
 .quick-links__img--github:hover, .quick-links__img--linkedin:hover, .quick-links__img--gmail:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }/*# sourceMappingURL=style.css.map */
